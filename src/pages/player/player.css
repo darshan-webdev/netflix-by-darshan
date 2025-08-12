@@ -1,0 +1,64 @@
+/* player.css */
+
+/* Whole player container */
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh;
+  background-color: #000; /* Black background for cinema effect */
+  color: white;
+  
+}
+
+/* Back arrow icon */
+.player img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.player img:hover {
+  transform: scale(1.1);
+}
+
+/* Video iframe */
+.player iframe {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  max-width: 100%;
+}
+
+/* Video info section */
+.player-info {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+width: 100%;
+margin-left: 20px;
+gap: 35%;
+}
+
+.player-info p {
+  margin: 5px 0;
+  color: #ccc;
+  
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .player iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .player-info {
+    font-size: 0.9rem;
+  }
+}
